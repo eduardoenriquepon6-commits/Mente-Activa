@@ -35,7 +35,6 @@
 #Contacto_Formulario {
     padding-left: 18rem;
     padding-right: 18rem;
-    /* opcional, si quieres simetría */
 }
 
 .navbar {
@@ -150,6 +149,39 @@
 }
 
 #valores p {
+    color: var(--texto_secundario);
+    line-height: 1.5;
+}
+
+#servicios {
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+#servicios .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+#servicios h3 {
+    grid-column: 1 / -1;
+    margin-bottom: 1.5rem;
+    color: var(--texto_principal);
+}
+
+#servicios .grid>div {
+    background-color: var(--fondo_alt_secciones);
+    padding: 24px;
+    border-radius: 12px;
+}
+
+#servicios h4 {
+    color: var(--texto_principal);
+    margin-bottom: 8px;
+}
+
+#servicios p {
     color: var(--texto_secundario);
     line-height: 1.5;
 }
