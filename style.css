@@ -67,3 +67,40 @@
 .navbar a:hover {
     color: var(--teal_claro);
 }
+
+#hero {
+    display: flex;
+    align-items: center;
+    margin: 25px 45px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+#hero h1,
+#hero p,
+.cta-group {
+    padding: 12px 0;
+}
+
+.cta-group {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.cta {
+    color: var(--teal_principal);
+    text-decoration: none;
+}
+
+.cta:hover {
+    transition: color 0.3s;
+    color: var(--teal_claro);
+}
+
+#hero img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 24rem;
+}
