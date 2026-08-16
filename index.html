@@ -12,9 +12,9 @@
     <header>
         <nav class="navbar">
             <img src="img/LogoMenteActiva.jpeg" />
-            <a href="valores">Valores</a>
-            <a href="servicios">Servicios</a>
-            <a href="Contacto_Formulario">Contacto</a>
+            <a href="#valores">Valores</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#contacto_formulario">Contacto</a>
         </nav>
     </header>
     <main>
@@ -25,8 +25,8 @@
                     servicios de salud mental en Honduras.
                 </p>
                 <div class="cta-group">
-                    <a class="cta" href="quienes_somos">Quienes Somos</a>
-                    <a class="cta" href="valores">Ver Valores</a>
+                    <a class="cta" href="#quienes_somos">Quienes Somos</a>
+                    <a class="cta" href="#valores">Ver Valores</a>
                 </div>
             </div>
             <div>
@@ -128,52 +128,66 @@
             </div>
         </section>
         <section id="contacto_formulario">
-            <h5>CONTACTO</h5>
-            <h3>SOLICITE SU CONSULTA CON NUESTRO PERSONAL CAPACITADO</h3>
-            <p>Respondemos en un intervalo de 24-36 horas respecto a cualquier duda, consulta o interés terapeutico.</p>
-            <div>
-                <h4>José Eduardo Rodríguez Nolasco</h4>
-                <p>Licenciado en Psicología titulado en la Universidad José Cecilio del Valle</p>
-                <p>jose.eduardo@ujcv.edu.hn</p>
+            <div class="contacto-colum-izq">
+                <div class="contacto-header">
+                    <h5>CONTACTO</h5>
+                    <h3>SOLICITE SU CONSULTA CON NUESTRO PERSONAL CAPACITADO</h3>
+                    <p>Respondemos en un intervalo de 24-36 horas respecto a cualquier duda, consulta o interés
+                        terapeutico.
+                    </p>
+                </div>
+                <div class="psicologos">
+                    <div class="psicologo">
+                        <h4>José Eduardo Rodríguez Nolasco</h4>
+                        <p class="cargo">Licenciado en Psicología titulado en la Universidad José Cecilio del Valle</p>
+                        <p class="email">jose.eduardo@ujcv.edu.hn</p>
+                    </div>
+                    <div class="psicologo">
+                        <h4>Rebeca Lizeth Perdomo Dominguez</h4>
+                        <p class="cargo">Licenciado en Psicología titulado en la Universidad José Cecilio del Valle</p>
+                        <p class="email">rebeca.perdomo@ujcv.edu.hn</p>
+                    </div>
+                    <div class="psicologo">
+                        <h4>Alejandra Marcela Rodas Godoy</h4>
+                        <p class="cargo">Licenciado en Psicología titulado en la Universidad José Cecilio del Valle</p>
+                        <p class="email">alejandra.rodas@ujcv.edu.hn</p>
+                    </div>
+                    <div class="psicologo">
+                        <h4>Jennifer Gabriela Rivera Rodríguez</h4>
+                        <p class="cargo">Licenciado en Psicología titulado en la Universidad José Cecilio del Valle</p>
+                        <p class="email">jennifer.rivera@ujcv.edu.hn</p>
+                    </div>
+                    <div class="psicologo">
+                        <h4>Dennis Elí Montenegro Martínez</h4>
+                        <p class="cargo">Licenciado en Psicología titulado en la Universidad José Cecilio del Valle</p>
+                        <p class="email">dennis.montenegro@ujcv.edu.hn</p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h4>Rebeca Lizeth Perdomo Dominguez</h4>
-                <p>Licenciado en Psicología titulado en la Universidad José Cecilio del Valle</p>
-                <p>rebeca.perdomo@ujcv.edu.hn</p>
-            </div>
-            <div>
-                <h4>Alejandra Marcela Rodas Godoy</h4>
-                <p>Licenciado en Psicología titulado en la Universidad José Cecilio del Valle</p>
-                <p>alejandra.rodas@ujcv.edu.hn</p>
-            </div>
-            <div>
-                <h4>Jennifer Gabriela Rivera Rodríguez</h4>
-                <p>Licenciado en Psicología titulado en la Universidad José Cecilio del Valle</p>
-                <p>jennifer.rivera@ujcv.edu.hn</p>
-            </div>
-            <div>
-                <h4>Dennis Elí Montenegro Martínez</h4>
-                <p>Licenciado en Psicología titulado en la Universidad José Cecilio del Valle</p>
-                <p>dennis.montenegro@ujcv.edu.hn</p>
-            </div>
-            <div>
-                <form>
-                    <label for="nombre">NOMBRE</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Su nombre">
-                    <br>
-                    <label for="telefono">TELÉFONO</label>
-                    <input type="text" id="telefono" name="telefono" placeholder="9999-0000">
-                    <br>
-                    <label for="tipo_servicio">TIPO DE SERVICIO</label>
-                    <select name="tipo_servicio" id="tipo_servicio">
-                        <option value="Seleccione una opcion">Seleccione una opción</option>
-                        <option value="Terapia Cognitiva Conductual">Terapia Cognitiva Conductual</option>
-                        <option value="Terapia Dialectica Conductual">Terapia Dialectica Conductual</option>
-                        <option value="Terapia Aceptacion y Compromiso">Terapia Aceptación y Compromiso</option>
-                    </select>
-                    <br>
-                    <label for="comentario">CUENTENOS SU MOTIVO DE CONSULTA</label>
-                    <textarea id="comentario" placeholder="Escribanos su mensaje"></textarea>
+            <div class="contacto-colum-der">
+                <form class="formulario-tarjeta">
+                    <div class="form-group">
+                        <label for="nombre">NOMBRE</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Su nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">TELÉFONO</label>
+                        <input type="text" id="telefono" name="telefono" placeholder="9999-0000">
+                    </div>
+                    <div class="form-group">
+                        <label for="tipo_servicio">TIPO DE SERVICIO</label>
+                        <select name="tipo_servicio" id="tipo_servicio">
+                            <option value="">Seleccione una opción</option>
+                            <option value="Terapia Cognitiva Conductual">Terapia Cognitiva Conductual</option>
+                            <option value="Terapia Dialectica Conductual">Terapia Dialectica Conductual</option>
+                            <option value="Terapia Aceptacion y Compromiso">Terapia Aceptación y Compromiso</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="comentario">CUENTENOS SU MOTIVO DE CONSULTA</label>
+                        <textarea id="comentario" placeholder="Escribanos su mensaje"></textarea>
+                    </div>
+                    <button type="submit" class="boton-enviar">Enviar Mensaje</button>
                 </form>
             </div>
         </section>
@@ -184,17 +198,17 @@
             </p>
             <div>
                 <h4>SERVICIOS</h4>
-                <a href="servicios">Terapia Cognitiva Conductual</a>
+                <a href="#servicios">Terapia Cognitiva Conductual</a>
                 <br>
-                <a href="servicios">Terapia Dialectica Conductual</a>
+                <a href="#servicios">Terapia Dialectica Conductual</a>
                 <br>
-                <a href="servicios">Terapia Aceptación y Compromiso</a>
+                <a href="#servicios">Terapia Aceptación y Compromiso</a>
             </div>
             <div>
                 <h4>EMPRESA</h4>
-                <a href="quienes_somos">Quienes Somos</a>
+                <a href="#quienes_somos">Quienes Somos</a>
                 <br>
-                <a href="Contacto_Formulario">Contacto</a>
+                <a href="#contacto_formulario">Contacto</a>
             </div>
             <div>
                 <h4>CONTACTO DIRECTO</h4>
