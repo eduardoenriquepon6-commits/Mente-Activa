@@ -263,9 +263,13 @@ p{
     align-items: flex-start;
 }
 
-.contacto-colum-izq,
+.contacto-colum-izq {
+    flex: 0 1 40%;
+    min-width: 0;
+}
+
 .contacto-colum-der {
-    flex: 1;
+    flex: 1 1 auto;
 }
 
 .contacto-header h5 {
@@ -474,4 +478,144 @@ footer{
 
 .footer-contacto a:hover{
     color:#fdfdfd;
+}
+
+/* ============================================================
+   RESPONSIVE DESIGN (media queries)
+   ============================================================
+   Las media queries adaptan el diseno al ancho de la pantalla.
+   No se usa JavaScript: el navegador aplica los estilos segun el
+   tamano de la ventana.
+
+   - Pantallas grandes: estilos normales (los de arriba)
+   - Tables (hasta 1024px): menos padding y 2 columnas
+   - Celulares (hasta 768px): todo apilado en 1 columna
+   ============================================================ */
+
+
+/* TABLET (hasta 1024px) */
+@media (max-width: 1024px) {
+
+    #hero,
+    #quienes_somos,
+    #valores,
+    #servicios,
+    #contacto_formulario {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    /* se quita el margen gigante que empuja la imagen del hero */
+    #hero {
+        gap: 2rem;
+    }
+
+    #hero img {
+        margin-left: 0;
+    }
+
+    /* las tarjetas de valores y servicios pasan de 3 a 2 columnas */
+    #valores .grid,
+    #servicios .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* el footer pasa a 2 columnas */
+    footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* CELULAR / MOBILE (hasta 768px) */
+@media (max-width: 768px) {
+
+    /* NAVBAR mas compacto */
+    .navbar {
+        padding: 12px 20px;
+    }
+
+    .navbar img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .navbar a {
+        margin-left: 16px;
+        font-size: 0.95rem;
+    }
+
+    /* HERO: se apila en columna y el texto se centra */
+    #hero {
+        flex-direction: column;
+        text-align: center;
+        margin: 16px;
+    }
+
+    .cta-group {
+        justify-content: center;
+    }
+
+    #hero img {
+        width: 220px;
+        height: 220px;
+        margin-left: 0;
+        margin-top: 24px;
+    }
+
+    /* el padding gigante (18rem) se reduce a 1.5rem */
+    #hero,
+    #quienes_somos,
+    #valores,
+    #servicios,
+    #contacto_formulario {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    #quienes_somos {
+        margin: 16px;
+    }
+
+    /* tarjetas de valores y servicios: 1 sola columna */
+    #valores .grid,
+    #servicios .grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    /* contacto: el equipo va arriba y el formulario abajo */
+    #contacto_formulario {
+        flex-direction: column;
+        gap: 3rem;
+        padding: 40px 1.5rem;
+    }
+
+    .formulario-tarjeta {
+        padding: 24px;
+    }
+
+    /* footer: 1 sola columna apilada */
+    footer {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 32px 24px;
+    }
+}
+
+/* CELULAR PEQUENO (hasta 480px) */
+@media (max-width: 480px) {
+
+    #hero h1 {
+        font-size: 1.5rem;
+    }
+
+    #quienes_somos h3,
+    .contacto-header h3 {
+        font-size: 1.4rem;
+    }
+
+    .cta {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
 }
